@@ -77,7 +77,8 @@ const ascii_art = [
   "    ███████  ██████   ██████  ███████ ███████ ██   ██  ███ ███  ██   ██ ██   ██ ██   ██ ██   ████  ❚█══█❚  ██    ██",
   "                                                                             ",
   '<p class="tip" ">Welcome to my interactive web terminal.</p>',
-  `<p class="tip" >For a list of available commands, type <span class="logo" style="color: #0dbc79;"> 'help'</span>.</p>`,
+  `<p class="tip" >For a list of available commands, type </p>`,
+  `<p class="tip"><span class="logo" style="color: #0dbc79;"> 'help'</span>.</p>`,
   `<p class="tip" >Got struck ?,press <span class="logo" style="color: #0dbc79;"> 'Enter'</span>.</p>`,
 ];
 
