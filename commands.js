@@ -1,46 +1,46 @@
 const help = `
 <div class="show-commands">
-<p> <span>help</span>            prints list of available commands</p>
-<p> <span>whois</span>           Who is Logeshwaran K?</p>
-<p> <span>whoami</span>          just try and figure it out 😉</p>
-<p> <span>projects </span>       list of projects I have done </p>
-<p> <span>banner</span>          Display the header</p>
-<p> <span>email  </span>         Do not email me</p>
-<p> <span>history</span>         View command history</p>
-<p> <span>clear </span>          Clear terminal</p>
-<p> <span>social </span>         Display social networks</p>
-<p> <span>projects </span>       Display my Projects</p>
+<p> <span style="font-size:1.2rem;">help</span>            prints list of available commands</p>
+<p> <span style="font-size:1.2rem;">whois</span>           Who is Logeshwaran K?</p>
+<p> <span style="font-size:1.2rem;">whoami</span>          just try and figure it out 😉</p>
+<p> <span style="font-size:1.2rem;">projects </span>       list of projects I have done </p>
+<p> <span style="font-size:1.2rem;">banner</span>          Display the header</p>
+<p> <span style="font-size:1.2rem;">email  </span>         Do not email me</p>
+<p> <span style="font-size:1.2rem;">history</span>         View command history</p>
+<p> <span style="font-size:1.2rem;">clear </span>          Clear terminal</p>
+<p> <span style="font-size:1.2rem;">social </span>         Display social networks</p>
+<p> <span style="font-size:1.2rem;">photo </span>          Display my Photo (Really Bruh? wanna see my photo🤨)</p>
 
 
 </div>
 `;
 
 const notFound = (cmd) =>
-  `<h3 class="pd-l">${cmd}: command not found. For a list of commands, type <span class="logo">'help'</span>.</h3>`;
+  `<h1 style="font-size:1.2rem;" class="pd-l">${cmd}: command not found. For a list of commands, type <span class="logo">'help'</span>.</h1>`;
 
 //const whoami = `<h2 class="pd-l"> Hmmm....🤔, how do I know bro ? if you don't even know who you are? (lmao) 😂 <br> For me you are my visitor ✌️<h2>`;
-const whoami = `<h2 class="pd-l-2">
+const whoami = `<h2 style="font-size:1.4rem;" class="pd-l-2">
 Hmmm....🤔, how do I know bro ? if you don't even know who you are ? (lmao) 😂 <br>
 just kidding bruh..
  For me you are my visitor ✌️</h2>`;
 
 const social = `
 <div class="social-networks">
-    <h3 > My Social Profiles 🤩</h3>
-    <h3 > linkedin          <a href="https://www.linkedin.com/in/k-logesh-waran-a73a98223" target="_blank">linkedin/in/k-logesh-waran-a73a98223</a></h3>
-    <h3>instagram           <a href="https://www.instagram.com/logeshwaran_karthi_003/" target="_blank">instagram/logeshwaran_karthi_003</a></h3>
-    <h3>github              <a href="https://github.com/K-logeshwaran" target="_blank">github/K-logeshwaran</a></h3>
-    <h3>Personalblog        <a href="https://main--candid-nasturtium-2bb19a.netlify.app/" target="_blank">logeshwaran's blog page</a></h3>
+    <h3 style="font-size:1.2rem;" > My Social Profiles 🤩</h3>
+    <h3 style="font-size:1.2rem;" > linkedin          <a style="font-size:1.2rem;" href="https://www.linkedin.com/in/k-logesh-waran-a73a98223" target="_blank">linkedin/in/k-logesh-waran-a73a98223</a></h3>
+    <h3 style="font-size:1.2rem;">instagram           <a style="font-size:1.2rem;" href="https://www.instagram.com/logeshwaran_karthi_003/" target="_blank">instagram/logeshwaran_karthi_003</a></h3>
+    <h3 style="font-size:1.2rem;">github              <a style="font-size:1.2rem;" href="https://github.com/K-logeshwaran" target="_blank">github/K-logeshwaran</a></h3>
+    <h3 style="font-size:1.2rem;">Personalblog        <a style="font-size:1.2rem;" href="https://main--candid-nasturtium-2bb19a.netlify.app/" target="_blank">logeshwaran's blog page</a></h3>
 </div>
 `;
 const email = `
-<div class="social-networks">
+<div style="font-size:1.2rem;" class="social-networks">
     <h3 >Seriously Bruh? wanna email me 🤷 <br> As you wish... </h3>
 </div>
 `;
 const sudo = `
 <div class="social-networks">
-    <h3 >🙅 No No No... you are not the admin 😂</h3>
+    <h1 style="font-size:1.4rem;" >🙅 No No No... you are not the admin 😂</h1>
 </div>
 `;
 
@@ -97,7 +97,7 @@ let art = [
   "    ⣿⡆⠀⠀⠈⠻⡅⠀⠀⠀⠀⣸⣿⠿⠇⠀⠀⢸ ",
   "    ⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠔⠛⠁⠀⠀⠀⣠⣿    ██       ██████   ██████  ███████ ███████ ██   ██ ██     ██  █████  ██████   █████  ███    ██          ██   ██    ",
   "    ⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿    ██      ██    ██ ██       ██      ██      ██   ██ ██     ██ ██   ██ ██   ██ ██   ██ ████   ██          ██  ██     ",
-  "    ⣿⣿⠃We Go Jim  ⣠⣾⣿⣿⣿   ██      ██    ██ ██   ███ █████   ███████ ███████ ██  █  ██ ███████ ██████  ███████ ██ ██  ██          █████   ",
+    "    ⣿⣿⠃We Go Jim  ⣠⣾⣿⣿⣿   ██      ██    ██ ██   ███ █████   ███████ ███████ ██  █  ██ ███████ ██████  ███████ ██ ██  ██          █████   ",
   "    ⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿    ██      ██    ██ ██    ██ ██           ██ ██   ██ ██ ███ ██ ██   ██ ██   ██ ██   ██ ██  ██ ██          ██  ██  ",
   "    ⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿    ███████  ██████   ██████  ███████ ███████ ██   ██  ███ ███  ██   ██ ██   ██ ██   ██ ██   ████  ❚█══█❚  ██    ██ @2024 ",
   "    ⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿  ",
@@ -108,3 +108,7 @@ let art = [
   "                            ",
   "                               ",
 ];
+
+
+
+

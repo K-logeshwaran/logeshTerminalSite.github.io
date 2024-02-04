@@ -1,5 +1,5 @@
 function changehandle(ele) {
-  console.log(ele.innerText);
+  //console.log(ele.innerText);
 }
 
 function addLine(text, style, time) {
@@ -31,10 +31,14 @@ function addLine(text, style, time) {
 //     }, time);
 // }
 
-function loopLines(name, style, time, after = false) {
-  if (after === true) {
+function loopLines(name, style, time, nodeText = false) {
+  if (nodeText === true) {
     name.forEach(function (item, index) {
-      terminal.innerHTML += item;
+      setTimeout(function () {   
+        //terminal.parentNode.insertBefore(next, terminal);
+        addText(item);
+        window.scrollTo(0, document.body.offsetHeight);
+      }, index*time);
     });
   } else {
     name.forEach(function (item, index) {
@@ -42,6 +46,7 @@ function loopLines(name, style, time, after = false) {
     });
   }
 }
+
 
 const ascii_art = [
   "    ⣿⣿⣿⣿⠏⠌⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ ",
@@ -144,10 +149,10 @@ function createTerminal() {
 
 function printHistory() {
   let his = localStorage.getItem("history");
-  addText(`<h2 class="pd-l">Previous commands</h2>`);
+  addText(`<h2 style="font-size:1.2rem;" class="pd-l">Previous commands</h2>`);
   let arr = JSON.parse(his);
   for (let a of arr) {
-    addText(`<h2 class="pd-l-2">${a}</h2>`);
+    addText(`<h2 style="font-size:1.2rem;" class="pd-l-2">${a}</h2>`);
   }
 }
 
@@ -155,3 +160,26 @@ function newTab( address,mail = false) {
   if (mail === true) window.location.href = "mailto:" + address;
   else   window.open(address, '_blank');
 }
+
+
+class ArrayPointer{
+  constructor(array=[]){
+    this.arr=array
+  }
+  getLast(times) {
+    let lastIndex=this.arr.length
+    let re=this.arr[lastIndex-times]
+    if(!re) return ""
+    return re    
+  }
+  getCurrent(times) {
+    let re=this.arr[times-1]
+    if(!re) return ""
+    return re    
+  }
+  get length(){
+    return this.arr.length
+  }
+}
+
+let t = new ArrayPointer(["d",'f','r'])
