@@ -1,6 +1,6 @@
 const help = `
 <div class="show-commands">
-<p> <span style="font-size:1.2rem;">help</span>            prints list of available commands</p>
+<p> <span style="font-size:1.2rem;">help</span>            you already know it dood 😉</p>
 <p> <span style="font-size:1.2rem;">whois</span>           Who is Logeshwaran K?</p>
 <p> <span style="font-size:1.2rem;">whoami</span>          just try and figure it out 😉</p>
 <p> <span style="font-size:1.2rem;">projects </span>       list of projects I have done </p>
