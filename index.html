@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./ic.png">
     <link rel="stylesheet" href="try.css">
+    <script src="./historyStackPointer.js" defer></script>
     <script src="./functions.js" defer></script>
     <script src="./commands.js" defer></script>
     <script src="./arts.js" defer></script>
@@ -20,7 +21,12 @@
 
     </div>
     
-
-</body>
+        <script type="text/javascript">
+        window.addEventListener('beforeunload', function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });
+        </script>
+    </body>
 
 </html>

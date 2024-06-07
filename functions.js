@@ -149,12 +149,13 @@ function createTerminal() {
 }
 
 function printHistory() {
-  let his = localStorage.getItem("history");
-  addText(`<h2 style="font-size:1.2rem;" class="pd-l">Previous commands</h2>`);
-  let arr = JSON.parse(his);
-  for (let a of arr) {
-    addText(`<h2 style="font-size:1.2rem;" class="pd-l-2">${a}</h2>`);
-  }
+    let his = localStorage.getItem("history");
+    console.log(his)
+    addText(`<h2 style="font-size:1.2rem;" class="pd-l">Previous commands</h2>`);
+    let arr = JSON.parse(his);
+    for (let a of arr) {
+        addText(`<h2 style="font-size:1.2rem;" class="pd-l-2">${a}</h2>`);
+    }
 }
 
 function newTab( address,mail = false) {
@@ -183,4 +184,4 @@ class ArrayPointer{
   }
 }
 
-let t = new ArrayPointer(["d",'f','r'])
+//let t = new ArrayPointer(["d",'f','r'])
