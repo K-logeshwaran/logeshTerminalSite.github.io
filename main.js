@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Disable mouse events
-  document.addEventListener("mousedown", disableMouseEvent);
-  document.addEventListener("mouseup", disableMouseEvent);
-  document.addEventListener("mousemove", disableMouseEvent);
-  document.addEventListener("mouseenter", disableMouseEvent);
-  document.addEventListener("mouseleave", disableMouseEvent);
-  document.addEventListener("click", disableMouseEvent);
-  document.addEventListener("dblclick", disableMouseEvent);
+    //  Disable mouse events
+    document.addEventListener("mousedown", disableMouseEvent);
+    document.addEventListener("mouseup", disableMouseEvent);
+    document.addEventListener("mousemove", disableMouseEvent);
+    document.addEventListener("mouseenter", disableMouseEvent);
+    document.addEventListener("mouseleave", disableMouseEvent);
+    document.addEventListener("click", disableMouseEvent);
+    document.addEventListener("dblclick", disableMouseEvent);
 
     function disableMouseEvent(event) {
         event.preventDefault();
@@ -39,9 +39,9 @@ setTimeout(() => {
 //let history = localStorage.getItem("history")==undefined? []:JSON.parse(localStorage.getItem("history"));
 //empty history stack
 //let history = []
-//let arr = localStorage.getItem("history") ==null ? [] : JSON.parse(localStorage.getItem("history"))
-//console.log("arr",arr)
-let HISTORY = new StackPointer([]);
+let arr = localStorage.getItem("history") ==null ? [] : JSON.parse(localStorage.getItem("history"))
+console.log("arr",arr)
+let HISTORY = new StackPointer(arr);
 
 let clicks = 1;
 let clicksDw = 1;
@@ -134,7 +134,7 @@ window.addEventListener('beforeunload', function (e) {
     e.preventDefault();
     console.log("hii")
     console.log(HISTORY)
-    localStorage.setItem("history",JSON.stringify(HISTORY));
+    localStorage.setItem("history",JSON.stringify(HISTORY.stack));
     e.returnValue = '';
 })
 // console.log(document.body.childNodes);

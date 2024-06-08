@@ -20,12 +20,11 @@ class StackPointer{
         return current;
     }
     handleDownArrow(){
-
         if(this.pointer>=this.stack.length-1){
             return this.stack[this.stack.length-1];
         }
-        let current = this.stack[this.pointer];
         this.pointer++;
+        let current = this.stack[this.pointer];
         return current;
     }
 }

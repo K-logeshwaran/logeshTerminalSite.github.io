@@ -34,7 +34,7 @@ function addLine(text, style, time) {
 function loopLines(name, style, time, nodeText = false) {
   if (nodeText === true) {
     name.forEach(function (item, index) {
-      setTimeout(function () {   
+      settimeout(function () {   
         //terminal.parentNode.insertBefore(next, terminal);
         addText(item);
         window.scrollTo(0, document.body.offsetHeight);
@@ -80,6 +80,8 @@ const ascii_art = [
   `<p class="tip" >For a list of available commands, type </p>`,
   `<p class="tip"><span class="logo" style="color: #0dbc79;"> 'help'</span>.</p>`,
   `<p class="tip" >Got struck ?,press <span class="logo" style="color: #0dbc79;"> 'Enter'</span>.</p>`,
+  `<p class="tip" > use UP arrow and DOWN arrow to navigate between commands ٩(^‿^)۶ </p>`,
+  `<p class="tip" >  </p>`,
 ];
 
 const intro = [
