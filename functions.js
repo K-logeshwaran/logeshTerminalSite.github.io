@@ -161,8 +161,10 @@ function printHistory() {
 }
 
 function newTab( address,mail = false) {
-  if (mail === true) window.location.href = "mailto:" + address;
-  else   window.open(address, '_blank');
+  
+  if (mail === true) 
+    return  window.location.href = "mailto:" + address;
+  return   window.open(address, '_blank');
 }
 
 

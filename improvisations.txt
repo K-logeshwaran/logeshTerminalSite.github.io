@@ -1,0 +1,6 @@
+date 20/4/25:
+    complex command added (i.e) cmd option
+    eg open instagram
+    need to :
+        add this in help command
+        also add aditional text when opening other websites (see line no 118 main.js)

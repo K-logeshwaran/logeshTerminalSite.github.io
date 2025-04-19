@@ -83,8 +83,8 @@ document.body.addEventListener("keydown", (e) => {
         addText(myImage2);
 
                 break;
-            case "":
-                break;
+      case "":
+            break;
             case " ":
                 break;
             case "social":
@@ -107,7 +107,31 @@ document.body.addEventListener("keydown", (e) => {
                 newTab("https://github.com/K-logeshwaran");
                 break;
             default:
+                let complex_cmd = command.trim().toLowerCase().split(" ");
+                if(complex_cmd.length===2){
+                    switch (complex_cmd[1]){
+                        case "linkedin":
+                            addText(`<h3 style="font-size:1.2rem;" > Opening linkedin 🤩</h3>`)
+                            newTab(`https://www.linkedin.com/in/k-logesh-waran-a73a98223" target="_blank">linkedin/in/k-logesh-waran-a73a98223`)
+                            break
+                        case "instagram":
+                            addText(`<h3 style="font-size:1.2rem;" > Opening insta 🤩</h3>`)
+                                newTab("https://www.instagram.com/logeshwaran_karthi_003/")
+                                break
+                        case "github":
+                            newTab("https://github.com/K-logeshwaran")
+                                    break
+                        case "Personalblog":
+
+                            newTab("https://main--candid-nasturtium-2bb19a.netlify.app/")
+                                    break
+                        default:
+                            addText(notFound(command));
+                            break
+                    }
+                }else{
                 addText(notFound(command));
+                }
                 //alert(command + "  command not found");
                 break;
         }
