@@ -1,16 +1,23 @@
 const help = `
 <div class="show-commands">
-<p> <span style="font-size:1.2rem;">help</span>            you already know it dood 😉</p>
-<p> <span style="font-size:1.2rem;">whois</span>           Who is Logeshwaran K?</p>
-<p> <span style="font-size:1.2rem;">whoami</span>          just try and figure it out 😉</p>
-<p> <span style="font-size:1.2rem;">projects </span>       list of projects I have done </p>
-<p> <span style="font-size:1.2rem;">banner</span>          Display the header</p>
-<p> <span style="font-size:1.2rem;">email  </span>         Do not email me</p>
-<p> <span style="font-size:1.2rem;">history</span>         View command history</p>
-<p> <span style="font-size:1.2rem;">clear </span>          Clear terminal</p>
-<p> <span style="font-size:1.2rem;">social </span>         Display social networks</p>
-<p> <span style="font-size:1.2rem;">photo </span>          Display my Photo (Really Bruh? wanna see my photo🤨)</p>
-
+<p> <span style="font-size:2rem;color:#0db977;">help</span>            you already know it dood 😉</p>
+<p> <span style="font-size:2rem;color:#0db977;">whois</span>           Who is Logeshwaran K?</p>
+<p> <span style="font-size:2rem;color:#0db977;">whoami</span>          just try and figure it out 😉</p>
+<p> <span style="font-size:2rem;color:#0db977;">projects </span>       list of projects I have done </p>
+<p> <span style="font-size:2rem;color:#0db977;">banner</span>          Display the header</p>
+<p> <span style="font-size:2rem;color:#0db977;">email  </span>         Do not email me 😂 JK 😂😂</p>
+<p> <span style="font-size:2rem;color:#0db977;">history</span>         View command history</p>
+<p> <span style="font-size:2rem;color:#0db977;">clear </span>          Clear terminal</p>
+<p> <span style="font-size:2rem;color:#0db977;">social </span>         Display social networks</p>
+<p> <span style="font-size:2rem;color:#0db977;">photo </span>          Display my Photo (Really Bruh? wanna see my photo🤨)</p>
+<p> <span style="font-size:2rem;color:#0db977;">profile</span>            profile is a complex command, (i.e) you can use options along with it</p>
+<div class="show-commands">
+                            
+                            <p> <span style="font-size:1.2rem;">profile instagram</span>           Open's my insta profile</p>
+                            <p> <span style="font-size:1.2rem;">profile github</span>              Open's my github profile</p>
+                            <p> <span style="font-size:1.2rem;">profile blog</span>                Open's my Blog page</p>
+                            <p> <span style="font-size:1.2rem;">profile LinkedIn</span>            Open's my LinkedIn profile</p>                            
+                            </div>
 
 </div>
 `;

@@ -59,7 +59,8 @@ document.body.addEventListener("keydown", (e) => {
     div.removeChild(inp);
     div.appendChild(clearInp(command));
     inp.value = "";
-    switch (command.trim().toLowerCase()) {
+    let user_cmd_input = command.trim().toLowerCase()
+    switch (user_cmd_input) {
       case "help":
         addText(help);
         break;
@@ -97,7 +98,7 @@ document.body.addEventListener("keydown", (e) => {
             case "sudo":
                 addText(sudo);
                 //newTab("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-                newTab("https://r.mtdv.me/giveaways/5nei2nliX5");
+                newTab("https://blogs.mtdv.me/blog/posts/y7cw254xA0");
                 break;
             case "whois":
                 addText(whois);
@@ -107,22 +108,23 @@ document.body.addEventListener("keydown", (e) => {
                 newTab("https://github.com/K-logeshwaran");
                 break;
             default:
-                let complex_cmd = command.trim().toLowerCase().split(" ");
-                if(complex_cmd.length===2){
+                let complex_cmd = user_cmd_input.split(" ");
+                if(complex_cmd.length===2 && complex_cmd[0]==="profile"){
                     switch (complex_cmd[1]){
                         case "linkedin":
                             addText(`<h3 style="font-size:1.2rem;" > Opening linkedin 🤩</h3>`)
                             newTab(`https://www.linkedin.com/in/k-logesh-waran-a73a98223" target="_blank">linkedin/in/k-logesh-waran-a73a98223`)
                             break
                         case "instagram":
-                            addText(`<h3 style="font-size:1.2rem;" > Opening insta 🤩</h3>`)
+                            addText(`<h3 style="font-size:1.2rem;" >  instagram opened 🤩</h3>`)
                                 newTab("https://www.instagram.com/logeshwaran_karthi_003/")
                                 break
                         case "github":
+                            addText(`<h3 style="font-size:1.2rem;" > Opening github 🤩</h3>`)
                             newTab("https://github.com/K-logeshwaran")
                                     break
-                        case "Personalblog":
-
+                        case "blog":
+                            addText(`<h3 style="font-size:1.2rem;" > Opening blog 🤩</h3>`)
                             newTab("https://main--candid-nasturtium-2bb19a.netlify.app/")
                                     break
                         default:
@@ -130,7 +132,19 @@ document.body.addEventListener("keydown", (e) => {
                             break
                     }
                 }else{
-                addText(notFound(command));
+                    if(user_cmd_input==="profile"){
+
+                        addText(`<div class="show-commands">
+                            <p> <span style="font-size:1.2rem;">profile</span>            profile is a complex command, (i.e) you can use options along with it</p>
+                            <p> <span style="font-size:1.2rem;">profile instagram</span>           Open's my insta profile</p>
+                            <p> <span style="font-size:1.2rem;">profile github</span>              Open's my github profile</p>
+                            <p> <span style="font-size:1.2rem;">profile blog</span>                Open's my Blog page</p>
+                            <p> <span style="font-size:1.2rem;">profile LinkedIn</span>            Open's my LinkedIn profile</p>                            
+                            </div>`);
+                    }else{
+                        addText(notFound(command));
+                    }
+                
                 }
                 //alert(command + "  command not found");
                 break;

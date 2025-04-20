@@ -4,3 +4,4 @@ date 20/4/25:
     need to :
         add this in help command
         also add aditional text when opening other websites (see line no 118 main.js)
+    Note command name not set yet open is just a place holder
